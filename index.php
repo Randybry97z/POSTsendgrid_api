@@ -6,6 +6,12 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 header("Content-Type: application/json");
 
+if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+  echo "HOLA";
+  http_response_code(201);
+  return 'hola';
+}
+
 /* $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri = explode( '/', $uri ); */
 
