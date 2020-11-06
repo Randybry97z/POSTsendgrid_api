@@ -1,0 +1,15 @@
+{
+    "name": "bssan/sendgrid_api",
+    "description": "api for send data trough sendgrid",
+    "type": "project",
+    "require": {
+        "sendgrid/sendgrid": "^7.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bryan",
+            "email": "bssandovalrod@gmail.com"
+        }
+    ]
+}
