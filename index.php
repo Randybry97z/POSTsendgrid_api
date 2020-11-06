@@ -13,6 +13,9 @@ $uri = explode( '/', $uri );
   $email = new \SendGrid\Mail\Mail();
   $email->setFrom($input['from']);
   $email->setSubject($input['subject']);
+  if(isset($input['cc'])){
+    $email->addCc($input['cc']);
+  }
   $email->addTo($input['to']);
   $email->addContent("text/html", $input['html']);
   $sendgrid = new \SendGrid($input['api_key']);
